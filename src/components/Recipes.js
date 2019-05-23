@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle, Button } from 'reactstrap';
-import { Consumer } from '../context'
+import { Consumer } from '../context';
 
 class Recipes extends Component {
 
@@ -39,9 +39,9 @@ class Recipes extends Component {
                                         </Button>
                                         <div >
                                             {collapse ? (<ul>
-                                                {recipe.ingredients.map(ingredient =>
-                                                    <li>{ingredient}</li>
-                                                )}
+                                                {/*{recipe.ingredients.map(ingredient =>*/}
+                                                <li >{recipe.ingredients}</li>
+                                                {/*)}*/}
                                             </ul>) : null}
                                         </div>
                                         <CardText>
